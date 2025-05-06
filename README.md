@@ -1,2 +1,3 @@
-# educrys-control-modular
-Control software in Python for the EduCrys setup (modular OOP version)
+# exp-democz-rpi
+
+Control and GUI for the EduCrys setup with Raspberry Pi

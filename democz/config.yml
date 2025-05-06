@@ -1,0 +1,103 @@
+userInterfaces: # Decides to which conections the program should try to connect.
+  cmd:     False       # Put False if external gui shall be used
+  gui:     "localhost" # Put False if no connections should be established or the IP (eg. "localhost") if a connections should be established
+  gamepad: False # NOT IMPLEMENTED YET
+  vifcon:  False # NOT IMPLEMENTED YET
+
+sampletimes: # in millisec
+  PID_SAMPLETIME:       50
+  HEATER_SAMPLETIME:     5
+  DATA_SAMPLETIME:    2000
+  DEVICE_SAMPLETIME:    50
+
+pid:
+  PID_OUT_MIN: 250      # 250 millisec
+  PID_OUT_MAX: 5000     # 5 sec
+  PID_OUT_PERIOD: 10000 # 10 sec
+  PID_KP: 200
+  PID_KI: 0.3
+  PID_KD: 0
+  PID_SET_MIN: 0   # °C
+  PID_SET_MAX: 250 # °C
+
+heater:
+  skip: False 
+  HEATER_POWER: 1.500 # Watt
+  SSR_PIN: 23 # Do not change unless you run custom hardware.
+
+sensors:
+  ptSensor: 
+    skip: False
+    TCorrection: 0.0 # °C
+
+  tcSensor1:
+    skip: False
+    name: TC1
+    TCorrection: 0.0 # °C
+
+  tcSensor2:
+    skip: False
+    name: TC2
+    TCorrection: 0.0 # °C
+
+  weight:
+    skip: False
+    pins: # Do not change unless you run custom hardware.
+      dat: 5 
+      clk: 6
+  
+  environment:
+    skip: False
+
+  power:
+    skip: False
+
+
+motors:
+
+  linMotor:
+    skip: False
+    sampletime: 100 # ms
+    pins: # Do not change unless you run custom hardware.
+      pwm: 19
+      dir: 26
+      on_:  20 # "_" neccearcy because "on" is a reserved keyword
+    pos:
+      start: 100 # mm above tin/material to grow
+      min:   0   # mm above tin/material to grow
+      max:   260 # mm above tin/material to grow
+    speed:
+      min: -100 # mm/min
+      max:  100 # mm/min
+
+  rotMotor:
+    skip: False
+    pins: # Do not change unless you run custom hardware.
+      pwm: 18
+      dir: 16
+    speed:
+      min: -12 # rpm
+      max: 12  # rpm
+
+  fan:
+    skip: False
+    pin: 25 # Do not change unless you run custom hardware.
+    speed:
+      min: 0   # % of max speed
+      max: 70  # % of max speed
+
+
+devices:
+  buzzer:
+    skip: False 
+  led:
+    skip: False
+
+cameras:
+  cam:
+    skip: False
+    sampletime: 60000 # 60s
+    exp: 30000 # ys
+  irCam:
+    sampletime: 60000 # 60s
+    skip: False
