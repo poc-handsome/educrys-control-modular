@@ -12,7 +12,7 @@ MVC incl. picture...
 
 Description of class structure incl. table
 
-# Current status
+## Current status
 
 Complete list of missing features vs. educrys-control-basic...
 
@@ -24,7 +24,7 @@ software but is not implemented in the new software. The GUI lacks important fea
 that includes the direct control of the PID output and the inability to display the images
 of the cameras.
 
-# Bugs
+## Bugs
 
 Complete list of bugs...
 
