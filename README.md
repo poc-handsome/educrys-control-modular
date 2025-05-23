@@ -1,21 +1,8 @@
-# educrys-control-modular
+# exp-democz-rpi
 
 Control and GUI for the EduCrys setup with Raspberry Pi
 
-## Raspberry Pi OS and requirements
-
-List of steps how to obtain and burn a working OS image and install all required packages...
-
-## Software design 
-
-MVC incl. picture...
-
-Description of class structure incl. table
-
-# Current status
-
-Complete list of missing features vs. educrys-control-basic...
-
+# Missing features
 Two more interfaces were planned but could not be implemented. The first one was a
 serial connection to a software used at the IKZ Modellexperimente Group [23]. The other
 is the control of some software functions with a game controller. The ability to use recipes
@@ -26,15 +13,6 @@ of the cameras.
 
 # Bugs
 
-Complete list of bugs...
-
 The author is aware of two bugs. The vertical position resets in the software after the
 minimum or maximum value is hit. This is a safety thread. The second bug is that the
 value of the PID output is displayed wrong.
-
-## Acknowledgements
-
-[This project](https://poc-handsome.github.io/) has received funding from the European Research Council (ERC) under the 
-European Union’s Horizon Europe framework programme for research and innovation (grant agreement No. 101122970).
-
-<img src="https://raw.githubusercontent.com/poc-handsome/poc-handsome.github.io/master/EN_FundedbytheEU_RGB_POS.png" width="400">
