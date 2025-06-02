@@ -1,4 +1,5 @@
 # educrys-control-modular
+[![DOI](https://zenodo.org/badge/978255829.svg)](https://doi.org/10.5281/zenodo.15496230)
 
 Control and GUI for the EduCrys setup with Raspberry Pi
 
